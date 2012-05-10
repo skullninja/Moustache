@@ -13,41 +13,12 @@
 //
 
 #import "VideoCaptureViewController.h"
+#import "FaceProcessor.h"
 
-@interface DetectedFace : NSObject {
-    CGPoint _mouth;
-    CGPoint _mouthUpperLip;
-    CGPoint _mouthBottomLip;
-    CGPoint _mouthLeft;
-    CGPoint _mouthRight;
-    CGPoint _leftEye;
-    CGPoint _rightEye;
+@interface DemoVideoCaptureViewController : VideoCaptureViewController<FaceProcessorDelegate> {
+    FaceProcessor *_faceProcessor;
 }
 
-@property (readwrite, nonatomic, assign) CGPoint mouth;
-@property (readwrite, nonatomic, assign) CGPoint mouthUpperLip;
-@property (readwrite, nonatomic, assign) CGPoint mouthBottomLip;
-@property (readwrite, nonatomic, assign) CGPoint mouthLeft;
-@property (readwrite, nonatomic, assign) CGPoint mouthRight;
-@property (readwrite, nonatomic, assign) CGPoint leftEye;
-@property (readwrite, nonatomic, assign) CGPoint rightEye;
-
-@end
-
-@interface DemoVideoCaptureViewController : VideoCaptureViewController
-{
-    cv::CascadeClassifier _faceCascade;
-    cv::Mat _prevMat;
-    std::vector<cv::Point2f> _points[2];
-    std::vector<cv::Point2f> _features;
-    std::vector<cv::Point2f> _initial;
-    std::vector<uchar> _status;
-    std::vector<float> _err;
-    
-    int _framesSinceLastFeatureCheck;
-    
-    NSMutableArray *_faces;
-}
 @property (retain, nonatomic) IBOutlet UIImageView *imagePreview;
 
 - (IBAction)toggleFps:(id)sender;

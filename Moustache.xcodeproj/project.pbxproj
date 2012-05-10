@@ -13,11 +13,12 @@
 		55968FF8155479E70037BBC0 /* stache.png in Resources */ = {isa = PBXBuildFile; fileRef = 55968FF7155479E70037BBC0 /* stache.png */; };
 		55968FFB15548AE50037BBC0 /* Trig.m in Sources */ = {isa = PBXBuildFile; fileRef = 55968FFA15548AE50037BBC0 /* Trig.m */; };
 		55BF857E155B0DE800BA599E /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55BF857D155B0DE800BA599E /* UIImage+OpenCV.mm */; };
-		55BF8580155B0DFE00BA599E /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 55BF857F155B0DFE00BA599E /* haarcascade_frontalface_alt2.xml */; };
 		55BF8582155B0E4200BA599E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BF8581155B0E4200BA599E /* libz.dylib */; };
 		55BF8584155B0E5100BA599E /* OpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BF8583155B0E5100BA599E /* OpenCV.framework */; };
 		55BF8588155B3AFE00BA599E /* VideoCaptureViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55BF8587155B3AFE00BA599E /* VideoCaptureViewController.mm */; };
 		55BF858B155B3B5500BA599E /* DemoVideoCaptureViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55BF858A155B3B5500BA599E /* DemoVideoCaptureViewController.mm */; };
+		55BF8592155B438D00BA599E /* FaceProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55BF8591155B438D00BA599E /* FaceProcessor.mm */; };
+		55BF8596155B4BF500BA599E /* DetectedFaceFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BF8595155B4BF500BA599E /* DetectedFaceFeatures.m */; };
 		55E620551549DDE000461FE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E620541549DDE000461FE2 /* UIKit.framework */; };
 		55E620571549DDE000461FE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E620561549DDE000461FE2 /* Foundation.framework */; };
 		55E620591549DDE000461FE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E620581549DDE000461FE2 /* CoreGraphics.framework */; };
@@ -47,13 +48,16 @@
 		55968FFA15548AE50037BBC0 /* Trig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trig.m; sourceTree = "<group>"; };
 		55BF857C155B0DE800BA599E /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+OpenCV.h"; path = "Moustache/UIImage+OpenCV.h"; sourceTree = "<group>"; };
 		55BF857D155B0DE800BA599E /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "UIImage+OpenCV.mm"; path = "Moustache/UIImage+OpenCV.mm"; sourceTree = "<group>"; };
-		55BF857F155B0DFE00BA599E /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt2.xml; path = Moustache/haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
 		55BF8581155B0E4200BA599E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		55BF8583155B0E5100BA599E /* OpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenCV.framework; sourceTree = "<group>"; };
 		55BF8586155B3AFE00BA599E /* VideoCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCaptureViewController.h; sourceTree = "<group>"; };
 		55BF8587155B3AFE00BA599E /* VideoCaptureViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoCaptureViewController.mm; sourceTree = "<group>"; };
 		55BF8589155B3B5500BA599E /* DemoVideoCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVideoCaptureViewController.h; sourceTree = "<group>"; };
 		55BF858A155B3B5500BA599E /* DemoVideoCaptureViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoVideoCaptureViewController.mm; sourceTree = "<group>"; };
+		55BF8590155B438D00BA599E /* FaceProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceProcessor.h; sourceTree = "<group>"; };
+		55BF8591155B438D00BA599E /* FaceProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceProcessor.mm; sourceTree = "<group>"; };
+		55BF8594155B4BF500BA599E /* DetectedFaceFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectedFaceFeatures.h; sourceTree = "<group>"; };
+		55BF8595155B4BF500BA599E /* DetectedFaceFeatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectedFaceFeatures.m; sourceTree = "<group>"; };
 		55E620501549DDE000461FE2 /* Moustache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moustache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E620541549DDE000461FE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55E620561549DDE000461FE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,7 +116,6 @@
 				55E6206E1549DDE000461FE2 /* first@2x.png */,
 				55E620731549DDE000461FE2 /* second.png */,
 				55E620751549DDE000461FE2 /* second@2x.png */,
-				55BF857F155B0DFE00BA599E /* haarcascade_frontalface_alt2.xml */,
 				55968FF7155479E70037BBC0 /* stache.png */,
 			);
 			name = Resources;
@@ -191,6 +194,10 @@
 				55E6205B1549DDE000461FE2 /* Supporting Files */,
 				55968FF915548AE40037BBC0 /* Trig.h */,
 				55968FFA15548AE50037BBC0 /* Trig.m */,
+				55BF8590155B438D00BA599E /* FaceProcessor.h */,
+				55BF8591155B438D00BA599E /* FaceProcessor.mm */,
+				55BF8594155B4BF500BA599E /* DetectedFaceFeatures.h */,
+				55BF8595155B4BF500BA599E /* DetectedFaceFeatures.m */,
 			);
 			path = Moustache;
 			sourceTree = "<group>";
@@ -264,7 +271,6 @@
 				55E620741549DDE000461FE2 /* second.png in Resources */,
 				55E620761549DDE000461FE2 /* second@2x.png in Resources */,
 				55968FF8155479E70037BBC0 /* stache.png in Resources */,
-				55BF8580155B0DFE00BA599E /* haarcascade_frontalface_alt2.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +290,8 @@
 				55BF857E155B0DE800BA599E /* UIImage+OpenCV.mm in Sources */,
 				55BF8588155B3AFE00BA599E /* VideoCaptureViewController.mm in Sources */,
 				55BF858B155B3B5500BA599E /* DemoVideoCaptureViewController.mm in Sources */,
+				55BF8592155B438D00BA599E /* FaceProcessor.mm in Sources */,
+				55BF8596155B4BF500BA599E /* DetectedFaceFeatures.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
