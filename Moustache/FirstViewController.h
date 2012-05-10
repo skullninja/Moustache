@@ -12,6 +12,8 @@
 @interface FirstViewController : VideoViewController {
     int _tryCount;
     dispatch_queue_t _faceQueue;
+    BOOL _processFrame;
 }
+@property (retain, nonatomic) IBOutlet UIImageView *stacheImage;
 
 @end
